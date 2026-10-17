@@ -1,0 +1,44 @@
+﻿/* ==========================================================================
+   PRINT STYLESHEET (FOR RESUME / CV EXPORT)
+   ========================================================================== */
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Hide UI chrome */
+  header,
+  footer,
+  .ambient-background,
+  .custom-cursor,
+  .scroll-progress,
+  .back-to-top,
+  .theme-toggle-btn,
+  .btn,
+  .modal-backdrop,
+  .section-tag,
+  .project-actions,
+  .contact-form-container,
+  #projects,
+  #contact {
+    display: none !important;
+  }
+
+  /* Print specific CV layout */
+  .printable-cv-view {
+    display: block !important;
+    position: static !important;
+    background: #ffffff !important;
+    color: #111827 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .print-page {
+    page-break-after: always;
+  }
+}
